@@ -8,4 +8,7 @@ os.environ["OR_APP_NAME"] = "Aider"
 
 import litellm  # noqa: E402
 
+litellm.success_callback = ["langfuse"]
+litellm.failure_callback = ["langfuse"]
+
 __all__ = [litellm]
